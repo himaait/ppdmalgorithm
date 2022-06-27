@@ -1,0 +1,53 @@
+<div class="container">
+	<div class="panel panel-default ">
+		<div class="alert alert-info">
+			<span class="lead">List Algorithms </span>
+		</div>
+		<div class="panel-body ">
+			<div class="table-responsive">
+				<table class="table table-hover table-bordered ">
+					<thead>
+						<tr>
+							<th>Algorithm</th>
+							<th>Technique</th>
+							<th>Hiding Failure</th>
+							<th>Missing Cost</th>
+							<th>Artificial Cost</th>
+							<th>Data Dissimilarity</th>
+							<th>Other Side Effects</th>
+							<th>Email</th>
+							
+							<th width="100">Edit</th>
+							<th width="100">Delete</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat="algorithm in algorithms">
+							<td>{{algorithm.ppdmAlgorithmName}}</td>
+							<td>{{algorithm.ppdmTechniqueName}}</td>
+							<td>{{algorithm.hidingFailure}}</td>
+							<td>{{algorithm.missingCost}}</td>
+							<td>{{algorithm.artificialCost}}</td>
+							<td>{{algorithm.dataDissimilarity}}</td>
+							<td>{{algorithm.otherSideEffects}}</td>
+							<td>{{algorithm.email}}</td>
+							
+							<td>
+								<button type="button" ng-click="editAlgorithm(algorithm.algorithmId)"
+									class="btn btn-primary custom-width">
+									<span class="glyphicon glyphicon-edit"></span> Edit
+								</button>
+							</td>
+							<td>
+								<button type="button" ng-click="deleteAlgorithm(algorithm.algorithmId)"
+									class="btn btn-danger custom-width">
+									<span class="glyphicon glyphicon-remove"></span> Delete
+								</button>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>

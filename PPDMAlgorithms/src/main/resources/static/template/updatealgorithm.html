@@ -1,0 +1,94 @@
+<div class="container">
+	<div class="alert alert-danger" role="alert" ng-if="errorMessage">{{errorMessage}}</div>
+	<div class="panel panel-default ">
+		<div class="alert alert-success">
+			<span class="lead">Update Reported Algorithm</span>
+			<p>Algorithm name is unique</p>
+		</div>
+		<div class="panel-body ">
+			<div class="container">
+				<form ng-submit="updateAlgorithmForm()" name="myForm" class="form-horizontal">
+					<div class="row">
+						<div class="form-group col-md-12">
+							<label class="col-md-2 control-lable" for="alname">Algorithm</label>
+							<div class="col-md-7">
+								<input type="text" ng-model="algorithm.ppdmAlgorithmName" id="alname" class="form-control input-sm"
+									placeholder="Enter algorithm name" />
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-md-12">
+							<label class="col-md-2 control-lable" for="altechnique">Technique</label>
+							<div class="col-md-7">
+								<input type="text" ng-model="algorithm.ppdmTechniqueName" id="altechnique" class="form-control input-sm"
+									placeholder="Enter algorithm's technique used" />
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-md-12">
+							<label class="col-md-2 control-lable" for="alhidingfailure">Hiding Failure</label>
+							<div class="col-md-7">
+								<input type="text" ng-model="algorithm.hidingFailure" id="alhidingfailure" class="form-control input-sm"
+									placeholder="Did hiding failure side effect reduce/increase?" />
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-md-12">
+							<label class="col-md-2 control-lable" for="almissingcost">Missing Cost</label>
+							<div class="col-md-7">
+								<input type="text" ng-model="algorithm.missingCost" id="almissingcost" class="form-control input-sm"
+									placeholder="Did missing cost side effect reduce/increase?" />
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-md-12">
+							<label class="col-md-2 control-lable" for="alartificialcost">Artificial Cost</label>
+							<div class="col-md-7">
+								<input type="text" ng-model="algorithm.artificialCost" id="alartificialcost" class="form-control input-sm"
+									placeholder="Did artificial cost side effect reduce/increase?" />
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-md-12">
+							<label class="col-md-2 control-lable" for="aldatadissimilarity">Data Dissimilarity</label>
+							<div class="col-md-7">
+								<input type="text" ng-model="algorithm.dataDissimilarity" id="aldatadissimilarity" class="form-control input-sm"
+									placeholder="Did data dissimilarity side effect reduce/increase?" />
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-md-12">
+							<label class="col-md-2 control-lable" for="alothersideeffects">Other Side Effects</label>
+							<div class="col-md-7">
+								<input type="text" ng-model="algorithm.otherSideEffects" id="alothersideeffects" class="form-control input-sm"
+									placeholder="Please enter any other side effects observed" />
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-md-12">
+							<label class="col-md-2 control-lable" for="email">Email</label>
+							<div class="col-md-7">
+								<input type="email" ng-model="algorithm.email" id="email" class="form-control input-sm"
+									placeholder="Enter reporter's email'" />
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-actions floatRight">
+							<input type="submit" value="Update" ng-click="updateAlgorithmForm()" class="btn btn-primary btn-sm">
+							<button type="button" ng-click="resetForm()" class="btn btn-warning btn-sm">Refresh
+								</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
