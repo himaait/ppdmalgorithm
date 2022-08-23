@@ -1,0 +1,16 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: >-
+  Privacy Preserving Data Mining  Algorithms
+  Repository
+message: >-
+  Please cite this software using the metadata from
+  'preferred-citation'.
+type: software
+authors:
+  - given-names: Hima Bindu
+    family-names: Sadashiva Reddy
+    orcid: 'https://orcid.org/0000-0002-3947-9632'
+  - {}
